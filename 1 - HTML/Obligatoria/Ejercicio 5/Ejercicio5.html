@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Documento con Marcos</title>
+    <style>
+        /* Ocultar por defecto todas las secciones excepto la principal */
+        .section {
+            display: none;
+        }
+
+        .section:target {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height: 20%; border: 1px solid black; overflow: hidden;">
+        <h1 style="margin:10; float: left; padding-left: 10px;">Tienda Nike</h1>
+        <img src="nike logo.png" alt="Nike Logo" style="float: right; margin: 10px; padding-right: 10px;">
+    </div>
+    <div style="display: flex; height: 500px;">
+        <div style="width: 20%; border: 1px solid black;">
+            <nav>
+                <ul>
+                    <li><a href="#articulos">Artículos</a></li>
+                    <li><a href="#masinfo">Más Información</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div style="width: 80%; border: 1px solid black; padding-left: 10px; padding-right: 10px;">
+            <div id="articulos" class="section">
+                <h2>Artículos en Existencia</h2>
+                <table rules="all" frame="box" width="100%">
+                    <tr>
+                        <td style="text-align: center;">
+                            Imagen
+                        </td>
+                        <td style="text-align: center;">
+                            Nombre
+                        </td>
+                        <td style="text-align: center;">
+                            Precio
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <img src="nike air force.webp" alt="" style="width: 100px; height: auto;">
+                        </td>
+                        <td style="text-align: center;">
+                            Nike Air Max Plus Drift
+                        </td>
+                        <td style="text-align: center;">
+                            $349.999
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <img src="nike air max plus droft.webp" alt="" style="width: 100px; height: auto;">
+                        </td>
+                        <td style="text-align: center;">
+                            Nike Air Force 1 07 LV8
+                        </td>
+                        <td style="text-align: center;">
+                            $239.999
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="masinfo" class="section">
+                <h2>Más Información</h2>
+                <p>Para realizar consultas, contáctanos vía mail: <a
+                        href="mailto:consultas@empresa.com">consultas@empresa.com</a></p>
+            </div>
+        </div>
+    </div>
+    <div style="height: 20%; border: 1px solid black; overflow: hidden; text-align: center;">
+        <nav>
+            <ul>
+                <a href="#articulos">Artículos</a></li><br>
+                <a href="#masinfo">Más Información</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
