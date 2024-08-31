@@ -32,14 +32,14 @@ Las tres formas más conocidas de dar estilo a un documento son las siguientes:
 ## 4. Cuáles son los distintos tipos de selectores más utilizados? Ejemplifique cada uno. 
 **Selector Universal:** 
 
-*Sintaxis:*
+- *Sintaxis:*
 ```css
 * { 
   atributo: valor;
 }
 ```
 
-*Ejemplo:* El estilo se aplicará a todos los elementos de la página.
+- *Ejemplo:* El estilo se aplicará a todos los elementos de la página.
 ```css
 * { 
   color: grey; 
@@ -48,18 +48,113 @@ Las tres formas más conocidas de dar estilo a un documento son las siguientes:
 
 **Selector Etiqueta:**
 
+- *Sintaxis:*
 ```css
-/* Sintaxis */
 * { 
   atributo: valor;
 }
+```
 
-/* Ejemplo */
+- *Ejemplo:* El estilo se aplicará a todos los elementos `<p>`.
+```css
 * { 
   color: grey; 
 }
 ```
 
+**Selector Clase:**
+
+- *Sintaxis:*
+```css
+.clase { 
+  atributo: valor; 
+}
+```
+
+- *Ejemplo:* El estilo se aplicará a cualquier elemento que tenga la clase `.blend`.
+```css
+.blend {
+  color: red;
+}
+```
+
+**Selector Identificador:** El selector identificador utiliza el atributo id para seleccionar un elemento. Solo puede haber un elemento con un id dado en un documento.
+
+- *Sintaxis:*
+```css
+#id {
+  atributo: valor; 
+}
+```
+- *Ejemplo:* El estilo se aplicará al elemento que tenga el id `#cent`.
+```css
+#cent {
+  color: blue;
+}
+```
+
+**Selector Descendiente:** Un elemento es descendiente de otro cuando se encuentra entre las etiquetas de apertura y de cierre del elemento padre.
+
+- *Sintaxis:* El estilo se aplica sobre el selector `1..N`.
+```css
+selector1 selector2 selectorN {
+  atributo: valor;
+}
+```
+
+- *Ejemplo:* El estilo se aplica a todos los párrafos que se encuentren dentro de una etiqueta `div`.
+```css
+div p { 
+  color: black;
+}
+```
+
+**Combinacion de Selectores:** La combinación de selectores nos permite dar un estilo a todos los selectores indicados.
+
+- *Sintaxis:* El estilo se aplica sobre los selectores indicados.
+```css
+selector1, selector2, selector3 {
+  atributo: valor;
+}
+```
+- *Ejemplo:* El estilo se aplica a todos los `div`'s y párrafos `p`.
+```css
+div, p {
+  color: orange;
+}
+```
+
+**Selector de Hijos:** Se usa para seleccionar un elemento que es hijo de otro elemento.
+
+- *Sintaxis:* El estilo se aplica sobre el selector 2.
+```css
+selector1 > selector2 {
+  atributo: valor;
+}
+```
+
+- *Ejemplo:* El estilo se aplica a todos los párrafos que sean hijos de un `div`.
+```css
+div > p {
+  color: white;
+}
+```
+
+**Selector Adyacente:** Se usa para seleccionar elementos que son hermanos, es decir, su elemento padre es el mismo y están seguidos en el código HTML.
+
+- *Sintaxis:* El estilo se aplica al `selector 2`.
+```css
+selector1 + selector2{ 
+  atributo: valor; 
+}
+```
+
+- *Ejemplo:* El estilo se aplica a todos los párrafos que sean hermanos de un `div`.
+```css
+div + p { 
+  color: black;
+} 
+```
 
 ## 5. Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
 Una pseudoclase es una palabra clave que se añade a los selectores y sirve para especificar un estado especial del elemento seleccionado. Las más utilizadas aplicadas a vinculos son `:link` y `:visit`.
