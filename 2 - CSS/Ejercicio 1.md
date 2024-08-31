@@ -157,15 +157,17 @@ div + p {
 ```
 
 ## 5. Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
-Una pseudoclase es una palabra clave que se añade a los selectores y sirve para especificar un estado especial del elemento seleccionado. Las más utilizadas aplicadas a vinculos son `:link` y `:visit`.
-- `:link` se utiliza para seleccionar enlaces que aún no han sido visitados por el usuario, es decir, enlaces que el usuario aún no ha hecho clic en ellos.
-- `:visited` se utiliza para seleccionar enlaces que ya han sido clickeados por el usuario, es decir, enlaces que el usuario ya ha hecho clic en ellos.
+Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Por ejemplo, `:hover` aplicará un estilo cuando el usuario haga hover sobre el elemento especificado por el selector.
+
+Las pseudoclases, junto con los pseudoelementos, permiten aplicar un estilo a un elemento no sólo en relación con el contenido del árbol de documento, sino también en relación a factores externos como el historial del navegador (`:visited`, por ejemplo), el estado de su contenido (como `:checked` en algunos elementos de formulario), o la posición del ratón (como `:hover` que permite saber si el ratón está encima de un elemento o no).
 
 ## 6. Qué es la herencia? 
 La herencia en CSS es un mecanismo mediante el cual las propiedades de estilo aplicadas a un elemento se transmiten a sus elementos hijos. Esto significa que, si se define una propiedad de estilo en un elemento padre, todos los elementos hijos van a heredar esa propiedad a menos que se especifique lo contrario.
-<br>
+
+
 Por ejemplo, si se define un color de texto en un elemento padre `<div>`, todos los elementos `<p>` que estén dentro de ese `<div>` heredarán ese color de texto a menos que se especifique un color diferente para los elementos `<p>`.
-<br>
+
+
 Sin embargo, no todas las propiedades de estilo son heredadas. Ejemplificando, las propiedades de posición, tamaño y margen no se heredan (esto es debido a que su valor depende de la posición del elemento en relación con el documento y no de la posición de sus elementos padres).
 
 ## 7. En qué consiste el proceso denominado cascada?
