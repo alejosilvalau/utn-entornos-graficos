@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <style>
+    .violeta {
+      background-color: blueviolet;
+    }
+
+    .rosa {
+      background-color: deeppink;
+    }
+
+    .rosa-claro {
+      background-color: lightsalmon;
+    }
+
+    .verde {
+      background-color: chartreuse;
+    }
+
+    .gris {
+      background-color: darkslategray;
+    }
+
+    .celeste {
+      background-color: aqua;
+    }
+
+    .carousel-item img {
+      filter: brightness(85%);
+    }
+  </style>
+  <title>Sistema De Grilla 2</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row violeta">Texto</div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 rosa-claro">
+        <!-- Button trigger modal -->
+        <div class="row justify-content-center" style="margin-top: 50px;">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Salir
+          </button>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col alert alert-success d-flex align-items-center" role="alert">An example success
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="row gris">
+                    <div class="card">
+                      <img
+                        src="https://nikearprod.vtexassets.com/arquivos/ids/878420/FD4290_003_A_PREM.jpg?v=638467290635870000"
+                        class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Titulo</h5>
+                        <p class="card-text">Texto descriptivo
+                        </p>
+                        <a href="#" class="btn btn-primary">Link</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row gris">
+                    <div class="card">
+                      <img
+                        src="https://nikearprod.vtexassets.com/arquivos/ids/1047718-1200-1200?width=1200&height=1200&aspect=true"
+                        class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Titulo</h5>
+                        <p class="card-text">Texto descriptivo
+                        </p>
+                        <a href="#" class="btn btn-primary">Link</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row celeste">Texto</div>
+                </div>
+                <div class="col-md-8">
+                  <div class="row gris">
+                    <div class="col">
+                      <div class="row">
+                        <div class="card">
+                          <img
+                            src="https://nikearprod.vtexassets.com/arquivos/ids/761879-1200-1200?width=1200&height=1200&aspect=true"
+                            class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Titulo</h5>
+                            <p class="card-text">Texto descriptivo
+                            </p>
+                            <a href="#" class="btn btn-primary">Link</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="row">
+                        <div class="card">
+                          <img
+                            src="https://nikearprod.vtexassets.com/arquivos/ids/809790-1200-1200?width=1200&height=1200&aspect=true"
+                            class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Titulo</h5>
+                            <p class="card-text">Texto descriptivo
+                            </p>
+                            <a href="#" class="btn btn-primary">Link</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row gris">
+                    <div class="col-md-6 col-sm-6 gris">
+                      <div class="row">
+                        <div class="card">
+                          <img
+                            src="https://nikearprod.vtexassets.com/arquivos/ids/1022261-1200-1200?width=1200&height=1200&aspect=true"
+                            class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Titulo</h5>
+                            <p class="card-text">Texto descriptivo
+                            </p>
+                            <a href="#" class="btn btn-primary">Link</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 gris">
+                      <div class="row">
+                        <div class="card">
+                          <img
+                            src="https://nikearprod.vtexassets.com/arquivos/ids/870533-1200-1200?width=1200&height=1200&aspect=true"
+                            class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Titulo</h5>
+                            <p class="card-text">Texto descriptivo
+                            </p>
+                            <a href="#" class="btn btn-primary">Link</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 celeste"></div>
+                    <div class="col-6 col-md-12 celeste">
+                      <!--Carousel-->
+                      <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img
+                              src="https://nikearprod.vtexassets.com/arquivos/ids/982629-1200-1200?width=1200&height=1200&aspect=true"
+                              class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="https://nikearprod.vtexassets.com/arquivos/ids/812594-1200-1200?width=1200&height=1200&aspect=true"
+                              class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="https://nikearprod.vtexassets.com/arquivos/ids/877635-1200-1200?width=1200&height=1200&aspect=true"
+                              class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                          data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                          data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Esta seguro que desea salir?</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
