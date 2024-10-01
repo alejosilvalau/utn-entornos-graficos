@@ -20,4 +20,4 @@
     //dirección del remitente concatenada con otras direcciones 
     $headers .= "From: xx@xx.com\r\n"; 
     
-    mail($destinatario,$asunto,$cuerpo,$headers)
+    mail($destinatario, $asunto, $cuerpo, $headers);
