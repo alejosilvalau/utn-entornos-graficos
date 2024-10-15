@@ -79,7 +79,7 @@ if ($vCantCiudades == 0) {
     }
     ?>
     <p>&nbsp;</p>
-    <A href='../index.html'>VOLVER AL MENU</A>
+    <a href='../index.html'>VOLVER AL MENU</a>
   </body>
 
   </html>
