@@ -16,7 +16,11 @@
 
 <body>
     <h1>Ejercicio 2</h1>
-    <h2>Has visitado la página <?php echo $_COOKIE['contador'] ?> veces.</h2>
+    <?php if (isset($_COOKIE['contador'])) { ?>
+        <p>Has visitado la página <?php echo $_COOKIE['contador'] ?> veces.</p>
+    <?php } else { ?>
+        <p>Bienvenido al contador de visitas! Tomá una galletita.</p>
+    <?php } ?>
 </body>
 
 </html>
