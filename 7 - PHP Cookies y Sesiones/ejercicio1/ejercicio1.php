@@ -22,7 +22,7 @@ if (isset($_POST["estilo"])) {
 
 <body>
   <h1>Ejercicio 1</h1>
-  <form action="Ejercicio1.php" method="post">
+  <form action="./ejercicio1.php" method="post">
     <p>Seleccione el estilo de la página:</p>
 
     <select name="estilo">
